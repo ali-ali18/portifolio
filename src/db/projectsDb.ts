@@ -1,4 +1,3 @@
-
 interface ProjectProps {
 	urlImg: string;
 	title: string;
@@ -21,15 +20,15 @@ const projects: ProjectProps[] = [
 		title: "WebCarros",
 		description:
 			"webCarro é uma plataforma web para compra e venda de veículos. Usuários podem visualizar anúncios de carros disponíveis, adicionar seus próprios veículos à venda e acessar funcionalidades exclusivas através de um sistema de login. O projeto visa facilitar a conexão entre compradores e vendedores de automóveis de forma prática e eficiente.",
-		link: "/projects/2",
-		isView: false,
+		link: "https://web-carros-roan.vercel.app/",
+		isView: true,
 	},
 	{
-		urlImg: "https://imgur.com/SkiHg7v.png",
-		title: "Lenora",
+		urlImg: "https://imgur.com/UGzbcqW.png",
+		title: "Tarefas+",
 		description:
-			"Lenora é um jogo de cartas digital com perguntas de diversas categorias, projetado para ser jogado por duas ou mais pessoas. O projeto oferece uma experiência interativa e divertida, estimulando o conhecimento e a interação social através de desafios baseados em perguntas variadas.",
-		link: "https://lenora-beryl.vercel.app",
+			"Tarefas+ é um aplicativo de gerenciamento de tarefas que permite criar, organizar e acompanhar afazeres do dia a dia. Com login integrado, os dados são salvos com segurança em banco de dados, possibilitando acesso em diferentes dispositivos.",
+		link: "https://tarefa-plus-six.vercel.app/",
 		isView: true,
 	},
 ];

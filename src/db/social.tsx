@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin } from "lucide-react";
 import { motion } from "motion/react";
-import { FaInstagram } from "react-icons/fa";
 
 const SkeletonOne = () => {
 	const variants = {
@@ -102,37 +101,7 @@ const SkeletonTwo = () => {
 	);
 };
 
-const SkeletonThree = () => {
-	const variants = {
-		initial: {
-			backgroundPosition: "0 50%",
-		},
-		animate: {
-			backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
-		},
-	};
-	return (
-		<motion.div
-			initial="initial"
-			animate="animate"
-			variants={variants}
-			transition={{
-				duration: 5,
-				// biome-ignore lint/style/useNumberNamespace: <explanation>
-				repeat: Infinity,
-				repeatType: "reverse",
-			}}
-			className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
-			style={{
-				background:
-					"linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
-				backgroundSize: "400% 400%",
-			}}
-		>
-			<motion.div className="h-full w-full rounded-lg" />
-		</motion.div>
-	);
-};
+
 
 const LinkButton = ({
 	link,
@@ -169,18 +138,6 @@ const socialDb = [
 		),
 		className: "md:col-span-1",
 		icon: <Linkedin size={24} />,
-	},
-	{
-		id: 3,
-		title: "Instagram",
-		header: <SkeletonThree />,
-		description: (
-			<LinkButton link={"https://www.instagram.com/alii_alii005/"}>
-				Acessar
-			</LinkButton>
-		),
-		className: "md:col-span-1",
-		icon: <FaInstagram size={24} />,
 	},
 ];
 
